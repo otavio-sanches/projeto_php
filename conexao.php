@@ -6,5 +6,5 @@
     $senha = "";
     $banco = "sistema_produtos";
     $conexao = mysqli_connect($host, $usuario, $senha, $banco);
-   
+
 ?>
