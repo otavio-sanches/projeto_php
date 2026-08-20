@@ -13,8 +13,9 @@
     <header>
         <h1>Sistema de Produtos</h1>
         <nav>
-            <a href="index.php">Início</a>
+            <a href="/projeto_php/index.php">Início</a>
             <a href="produtos/listar.php">Produtos</a>
-            <a href="login.php">Login</a>
+            <a href="/projeto_php/login.php">Login</a>
+            <a href="/projeto_php/logout.php">Sair</a>
         </nav>
     </header>
