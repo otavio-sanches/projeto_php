@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Jul-2026 às 16:48
--- Versão do servidor: 10.4.32-MariaDB
--- versão do PHP: 8.2.12
+-- Tempo de geração: 03-Set-2026 às 16:42
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,7 +35,18 @@ CREATE TABLE `produtos` (
   `descricao` varchar(255) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `quantidade` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `quantidade`) VALUES
+(2, 'Teclado Mecânico RGB', 'Teclado mecânico switch azul com retroiluminação RGB', '249.00', 10),
+(3, 'Mouse Sem Fio Ergoclick', 'Mouse óptico sem fio 1600 DPI com conexão USB', '79.90', 15),
+(5, 'Monitor Gamer 24', 'Monitor LED Full HD 144Hz 1ms HDMI/DisplayPort', '899.90', 8),
+(8, 'Mesa para Computador Ergônoma', 'Mesa de escritório em MDF com suporte para CPU e passa-cabos', '350.00', 5),
+(9, 'Cadeira de Escritório Giratória', 'Cadeira ergonômica com regulagem de altura e encosto em rede', '420.00', 7);
 
 -- --------------------------------------------------------
 
@@ -48,7 +59,7 @@ CREATE TABLE `usuarios` (
   `nome` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -81,7 +92,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
